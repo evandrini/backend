@@ -11,7 +11,6 @@ def validar_login():
         messagebox.showerror("Erro", "O e-mail deve conter o caractere '@'.")
     else:
         messagebox.showinfo("Sucesso", "Login realizado com sucesso!")
-        # Aqui você pode adicionar a lógica para abrir a próxima janela ou realizar outras operações após o login.
 
 # Criando a janela principal
 root = tk.Tk()
@@ -21,7 +20,7 @@ root.title("Login")
 label_email = tk.Label(root, text="E-mail:")
 label_senha = tk.Label(root, text="Senha:")
 entry_email = tk.Entry(root)
-entry_senha = tk.Entry(root, show="*")  # A senha será exibida como '*' para ocultá-la
+entry_senha = tk.Entry(root, show="*")
 
 button_login = tk.Button(root, text="Login", command=validar_login)
 
